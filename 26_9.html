@@ -1,0 +1,38 @@
+<script>
+    let tab = []
+    let max = 0;
+    let min = 0;
+
+
+
+    for (i = 0; i < 10; i++) {
+        let los = Math.floor((Math.random() * 100)+1);
+        tab.push(los);
+   
+   
+
+
+    for (let j of tab) {
+
+        if (i == 1) {
+            min = j;
+            max = j;
+        } 
+        
+        else {
+            if (j > max)
+                max = j;
+        }
+
+        if (j < min) {
+            j = min;
+        }
+
+
+    }
+
+}
+    console.log(tab);
+    console.log(`Max ${max} , Min ${min}`);
+    
+</script>
